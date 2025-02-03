@@ -2,6 +2,7 @@ FROM node:8.9-alpine
 
 RUN mkdir -p /app
 WORKDIR /app
+RUN npm install -g npm@latest
 
 RUN npm install -g nodemon
 RUN npm config set registry https://registry.npmjs.org
